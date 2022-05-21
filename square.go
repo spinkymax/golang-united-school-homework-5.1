@@ -11,8 +11,8 @@ type Square struct {
 	a     uint
 }
 
-func (side Square) End() uint {
-return uint(math.Sqrt(2) * (float64(side.a)))
+func (side Square) End() Point {
+return Point{x: side.start.x + int(side.a), y: side.start.y + int(side.a)}
 }
 
 func (square Square) Area() uint {
