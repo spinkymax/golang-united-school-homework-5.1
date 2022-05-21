@@ -15,7 +15,7 @@ func (side Square) End() uint {
 return uint(math.Sqrt(2) * (float64(side.a)))
 }
 
-func (side Square) Area() uint {
+func (square Square) Area() uint {
 	return uint(math.Pow(float64(square.a), 2))
 }
 
